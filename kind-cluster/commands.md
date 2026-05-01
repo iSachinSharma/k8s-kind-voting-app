@@ -97,6 +97,9 @@
 - Apply the Argo CD manifest:
   ```bash
   kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+or 
+  kubectl apply --server-side -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+  
   ```
 
 - Check services in Argo CD namespace:
